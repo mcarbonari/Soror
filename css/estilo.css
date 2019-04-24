@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+	--amarelo: rgba(255,255,0,0.5);
+	--amarelo2: #ffe642;
+	--cinza: rgba(192,192,192,0.2);
+	--roxo: #8b008b;
+	--roxo2: rgba(139, 0, 139, 0.5);
+}
+
+body{
+	font-family: 'Rajdhani', sans-serif !important;
+}
+
+.navbar-collapse{
+	flex-grow: 0 !important;
+}
+
+.logo{
+	height: 40px;
+}
+
+.linha{
+	background: var(--roxo);
+	height: 4px;
+	width: 30px;
+	margin: 4px;
+	border-radius: 10px;
+}
+
+li{
+	list-style: none;
+}
+
+/*	Animação do header
+.anime{
+	opacity: 0;
+	transform: translate3d(0,-100px,0);
+	transition: .3s;
+}
+
+.anime-start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}*/
+
+.home{
+	height: 100vh;
+	background-image: url(../img/inicio.jpg);
+	background-position: center;
+	background-size: cover;	
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.conteudohome{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.home h1{
+	color: white;
+	text-shadow: 3px 3px 10px #000;
+	text-transform: uppercase;
+	margin-top: 1rem;
+}
+
+.home p{
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px 5px #000;
+	font-size: 1.1rem;
+}
+
+hr{
+	margin-bottom: 0.3rem !important;
+	margin-top: 0.3rem !important;
+}
+
+.italico{
+	font-style: italic;
+}
+
+.logoinicio{
+	height: 120px;
+}
+
+.botoes{
+	display: flex;
+}
+
+.btnprincipal{
+	border-style: none;
+	background-color: var(--roxo);
+	height: 35px;
+	width: 90px;
+	border-radius: 10px;
+	margin: 10px;
+	color: white;
+}
+
+.lista a{
+	color: white !important;
+	text-decoration: none!important;
+}
+
+.relativa{
+	position: relative;
+}
+
+.lista{
+	position: absolute;
+	left: 15px;
+	display: none;
+	box-shadow: 3px 3px 20px #696969;
+	background-color: var(--roxo2);
+	padding: 0.5rem;
+	border-radius: 10px;
+}
+
+.titulo{
+	display: flex;
+	padding: 2rem;
+	justify-content: space-between;
+}
+
+.titulo input{
+	border: 1px solid var(--amarelo2);
+}
+
+h2{
+	padding-right: 2rem; 
+}
+
+.btn{
+	padding: 0 !important;
+}
+
+.btnajuste{
+	height: 40px;
+}
+
+.aprender{
+	height: 100vh;
+}
+
+.cards{
+	display: flex;
+}
+
+.buscar{
+	height: 100vh;
+}
+
+.cad_servicos{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.pessoal{
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+.servico{
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
+}
+
+.btnajuste3{
+	background-color: var(--amarelo2) !important;
+	/*padding:  !important;*/
+	border-radius: 100% !important;
+	color: white !important;
+	font-size: 2rem !important;
+}
+
+
+input{
+	width: 300px;
+}
+
+.relatos{
+	display: flex;
+}
+
+.relatoform{
+	background-color: var(--amarelo);
+	border-radius: 5px;
+	padding: 1.5rem;
+}
+
+.bg{
+	background-color: var(--cinza) !important;
+	border-style: none !important;
+}
+
+.arejamento{
+	margin-top: 10px;
+}
+
+.btnajuste2{
+	padding: 5px !important;
+	background-color: var(--roxo) !important;
+	color: #fcfcfc !important;
+}
+
+.card{
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 725px){
+	h2{
+		padding-right: 40rem; 
+	}
+
+	
+	.cad{
+		height: 100vh;
+	}
+
+	.cad_servicos{
+		flex-direction: row;
+	}
+}
+

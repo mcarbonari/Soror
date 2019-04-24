@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sóror</title>
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+			<div class="container">
+					<a href="#home">
+						<img src="img/logo.png" class="logo">
+					</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+					<div class="linha"></div>
+					<div class="linha"></div>
+					<div class="linha"></div>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li><a href="#home" class="nav-link">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Serviços</a>
+					    <ul class="dropdown-menu">
+				        <li><a class="dropdown-item" href="#buscar">Buscar</a></li>
+						    <hr></hr>
+						    <li><a class="dropdown-item" href="#cad">Cadastrar</a></li>
+				      </ul>
+				    </li>
+						<li><a href="#aprender" class="nav-link">Aprender</a></li>
+						<li><a href="#relatar" class="nav-link">Relatar</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="home" id="home">
+			<div class="container conteudohome">
+				<img src="img/logo.png" class="logoinicio">
+				<p>A palavra sóror significa <span class="italico">irmãs</span> em latim. Ela deu origem ao termo <span class="italico">sororidade</span>, ou seja, irmandade.</p>
+				<h1>O que você deseja?</h1>
+				<div class="botoes">
+					<div class="relativa">
+						<button class="btnprincipal" id="servico">Serviços</button>
+						<ul class="lista" id="listaOculta">
+			        <li><a href="#buscar">Buscar</a></li>
+			        <hr>
+					    <li><a href="#cad">Cadastrar</a></li>
+			      </ul>
+					</div>
+					<button class="btnprincipal" onclick="aprender()">Aprender</button>
+					<button class="btnprincipal" onclick="relatar()">Relatar</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="buscar container" id="buscar">
+			<div class="titulo">
+				<h2>Buscar serviço</h2>
+				<form class="input-group">
+					<input class="form-control" type="search" placeholder="Buscar">
+					<span class="input-group-btn">
+						<button class="btn">
+							<img src="img/search_yellow.png" class="btnajuste">
+						</button>
+					</span>	
+				</form>
+			</div>
+		</section>
+
+		<section class="cad container" id="cad">
+			<div class="titulo">
+				<h2>Cadastrar serviço</h2>
+				<p>alguma coisa</p>
+			</div>
+			<div class="cad_servicos">
+				<div class="pessoal">
+					<h3>Dados Pessoais</h3>
+					<div class="sla">
+						<label for="nome">Nome</label>
+						<p><input type="text" id="nome"></p>
+						<label for="email">Email</label>
+						<p><input type="email" id="email"></p>
+						<label for="senha">Senha</label>
+						<p><input type="password" id="senha"></p>
+						<label for="cpf">CPf</label>
+						<p><input type="cpf" id="cpf"></p>
+					</div>
+				</div>
+				<div class="servico">
+					<h3>Serviço</h3>
+					<div class="sla">
+						<label for="categoria">Categoria</label>
+						<p><input type="text" id="categoria"></p>
+						<label for="especifico">Específico</label>
+						<p><input type="text" id="especifico"></p>
+						<label for="descricao">Descrição</label>
+						<p><textarea id="descricao"></textarea></p>
+						<label for="contato">Contato</label>
+						<p><input type="number" id="contato"></p>
+					</div>
+					<div class="add">
+						<button class="btn btnajuste3">+</button>
+					</div> 
+				</div>
+			</div>
+		</section>
+
+		<section class="aprender container" id="aprender">
+			<div class="titulo">
+				<h2>Aprender</h2>
+				<form class="input-group">
+					<input class="form-control" type="search" placeholder="Buscar">
+					<span class="input-group-btn">
+						<button class="btn">
+							<img src="img/search_yellow.png" class="btnajuste">
+						</button>
+					</span>	
+				</form>
+			</div>
+			<div class="cards" id="cards">
+				<!-- <div class="card ">
+					<div class="card-header text-center">
+						<h1>Título</h1>
+					</div>
+					<div class="card-body text-justify">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					</div>
+				</div>
+				<div class="card ">
+					<div class="card-header text-center">
+						<h1>Título</h1>
+					</div>
+					<div class="card-body text-justify">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					</div>
+				</div>
+				<div class="card ">
+					<div class="card-header text-center">
+						<h1>Título</h1>
+					</div>
+					<div class="card-body text-justify">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					</div>
+				</div>
+				<div class="card ">
+					<div class="card-header text-center">
+						<h1>Título</h1>
+					</div>
+					<div class="card-body text-justify">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					</div>
+				</div> -->
+			</div>
+		</section>
+
+		<section class="container" id="relatar">
+			<div class="titulo">
+				<h2>Relatos</h2>
+				<form class="input-group">
+					<input class="form-control" type="search" placeholder="Buscar relato">
+					<span class="input-group-btn">
+						<button class="btn">
+							<img src="img/search_yellow.png" class="btnajuste">
+						</button>
+					</span>	
+				</form>
+			</div>
+			<div class="relatos row">
+				<div class="col-lg-4">
+					<div class="relatoform">
+						<h4>Deseja enviar um relato?</h4>
+						<form class="formajuste">
+							<input class="form-control bg arejamento" type="email" placeholder="Email">
+							<input class="form-control bg arejamento" type="text" placeholder="Assunto">
+							<input class="form-control bg arejamento" type="textarea" placeholder="Relato">
+							<button class="btn arejamento btnajuste2">Enviar relato</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-4">			
+					<div class="card ">
+						<div class="card-header text-center">
+							<h1>Título</h1>
+						</div>
+						<div class="card-body text-justify">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">			
+					<div class="card ">
+						<div class="card-header text-center">
+							<h1>Título</h1>
+						</div>
+						<div class="card-body text-justify">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">			
+					<div class="card ">
+						<div class="card-header text-center">
+							<h1>Título</h1>
+						</div>
+						<div class="card-body text-justify">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">			
+					<div class="card ">
+						<div class="card-header text-center">
+							<h1>Título</h1>
+						</div>
+						<div class="card-body text-justify">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">			
+					<div class="card ">
+						<div class="card-header text-center">
+							<h1>Título</h1>
+						</div>
+						<div class="card-body text-justify">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer></footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/link.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="js/funcBotao.js"></script>
+</body>
+</html>
