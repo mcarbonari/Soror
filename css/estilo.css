@@ -181,11 +181,7 @@ h2{
 }
 
 .btnajuste3{
-	background-color: var(--amarelo2) !important;
-	/*padding:  !important;*/
-	border-radius: 100% !important;
-	color: white !important;
-	font-size: 2rem !important;
+	height: 30px;
 }
 
 
