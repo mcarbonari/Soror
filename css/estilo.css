@@ -20,7 +20,7 @@ body{
 }
 
 .logo{
-	height: 40px;
+	height: 35px;
 }
 
 .linha{
@@ -30,22 +30,6 @@ body{
 	margin: 4px;
 	border-radius: 10px;
 }
-
-li{
-	list-style: none;
-}
-
-/*	Animação do header
-.anime{
-	opacity: 0;
-	transform: translate3d(0,-100px,0);
-	transition: .3s;
-}
-
-.anime-start{
-	opacity: 1;
-	transform: translate3d(0,0,0);
-}*/
 
 .home{
 	height: 100vh;
@@ -70,6 +54,7 @@ li{
 	text-shadow: 3px 3px 10px #000;
 	text-transform: uppercase;
 	margin-top: 1rem;
+	font-size: 2.2rem !important;
 }
 
 .home p{
@@ -96,7 +81,7 @@ hr{
 	display: flex;
 }
 
-.btnprincipal{
+.btnhome{
 	border-style: none;
 	background-color: var(--roxo);
 	height: 35px;
@@ -104,9 +89,11 @@ hr{
 	border-radius: 10px;
 	margin: 10px;
 	color: white;
+	box-shadow: 3px 3px 20px #696969;
 }
 
-.lista a{
+.lista a, .lista li{
+	list-style: none;
 	color: white !important;
 	text-decoration: none!important;
 }
@@ -127,8 +114,9 @@ hr{
 
 .titulo{
 	display: flex;
-	padding: 2rem;
-	justify-content: space-between;
+	flex-direction: column;
+	margin: 2rem;
+	align-items: center;	
 }
 
 .titulo input{
@@ -143,16 +131,8 @@ h2{
 	padding: 0 !important;
 }
 
-.btnajuste{
+.btnsearch{
 	height: 40px;
-}
-
-.aprender{
-	height: 100vh;
-}
-
-.cards{
-	display: flex;
 }
 
 .buscar{
@@ -167,23 +147,29 @@ h2{
 }
 
 .pessoal{
-	height: 70vh;
+	height: 50vh;
 	display: flex;
 	flex-direction: column;
 	margin: 2rem;
 }
 
 .servico{
-	height: 70vh;
+	height: 65vh;
 	display: flex;
 	flex-direction: column;
 	margin: 2rem;
 }
 
-.btnajuste3{
+.btnadd{
 	height: 30px;
 }
+.aprender{
+	height: 100vh;
+}
 
+.cards{
+	display: flex;
+}
 
 input{
 	width: 300px;
@@ -197,6 +183,7 @@ input{
 	background-color: var(--amarelo);
 	border-radius: 5px;
 	padding: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 .bg{
@@ -208,7 +195,7 @@ input{
 	margin-top: 10px;
 }
 
-.btnajuste2{
+.btnrelatoform{
 	padding: 5px !important;
 	background-color: var(--roxo) !important;
 	color: #fcfcfc !important;
@@ -223,7 +210,11 @@ input{
 		padding-right: 40rem; 
 	}
 
-	
+	.titulo{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+		
 	.cad{
 		height: 100vh;
 	}
