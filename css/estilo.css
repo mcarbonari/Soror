@@ -115,8 +115,9 @@ hr{
 .titulo{
 	display: flex;
 	flex-direction: column;
-	margin: 2rem;
+	margin: 50px 2rem;
 	align-items: center;	
+	border: solid red;
 }
 
 .titulo input{
@@ -132,11 +133,17 @@ h2{
 }
 
 .btnsearch{
-	height: 40px;
+	margin: 3px 10px;
+	height: 30px;
 }
 
 .buscar{
 	height: 100vh;
+	border: solid black;
+}
+
+.cad{
+	border: solid purple;
 }
 
 .cad_servicos{
@@ -165,17 +172,19 @@ h2{
 }
 .aprender{
 	height: 100vh;
-}
-
-.cards{
-	display: flex;
+	border: solid green;
 }
 
 input{
 	width: 300px;
 }
 
+.rel{
+	border: solid red;
+}
+
 .relatos{
+
 	display: flex;
 }
 
