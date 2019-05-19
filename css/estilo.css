@@ -115,10 +115,15 @@ hr{
 .titulo{
 	display: flex;
 	flex-direction: column;
-	margin: 50px 2rem;
+	margin: 2rem;
 	align-items: center;	
-	border: solid red;
+	/*border: solid red;*/
 }
+
+.titulo h2, .titulo form{
+	margin-top: 56px;
+}
+
 
 .titulo input{
 	border: 1px solid var(--amarelo2);
@@ -139,11 +144,11 @@ h2{
 
 .buscar{
 	height: 100vh;
-	border: solid black;
+	/*border: solid black;*/
 }
 
 .cad{
-	border: solid purple;
+	/*border: solid purple;*/
 }
 
 .cad_servicos{
@@ -170,9 +175,14 @@ h2{
 .btnadd{
 	height: 30px;
 }
+
 .aprender{
 	height: 100vh;
-	border: solid green;
+	/*border: solid green;*/
+}
+
+.slide-main{
+	display: flex;
 }
 
 input{
@@ -180,7 +190,7 @@ input{
 }
 
 .rel{
-	border: solid red;
+	/*border: solid red;*/
 }
 
 .relatos{
