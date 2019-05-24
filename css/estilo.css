@@ -176,6 +176,11 @@ h2{
 	height: 30px;
 }
 
+.add{
+	display: flex;
+	justify-content: space-between;
+}
+
 .aprender{
 	height: 100vh;
 	/*border: solid green;*/
