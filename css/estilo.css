@@ -181,6 +181,12 @@ h2{
 	justify-content: space-between;
 }
 
+.desc{
+	width: 300px; 
+	height: 200px; 
+	resize: none;
+}
+
 .aprender{
 	height: 100vh;
 	/*border: solid green;*/
