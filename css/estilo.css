@@ -149,7 +149,7 @@ h2{
 
 .cad{
 	/*border: solid purple;*/
-	height: 300vh;
+	/*height: 150vh;*/
 }
 
 .cad_servicos{
@@ -160,14 +160,14 @@ h2{
 }
 
 .pessoal{
-	height: 50vh;
+	height: 45vh;
 	display: flex;
 	flex-direction: column;
 	margin: 2rem;
 }
 
 .servico{
-	height: 65vh;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	margin: 2rem;
@@ -183,8 +183,8 @@ h2{
 }
 
 .desc{
-	width: 300px; 
-	height: 200px; 
+	min-width: 300px; 
+	min-height: 100px; 
 	resize: none;
 }
 
@@ -247,7 +247,7 @@ input{
 	}
 		
 	.cad{
-		height: 100vh;
+		/*height: 100vh;*/
 	}
 
 	.cad_servicos{
