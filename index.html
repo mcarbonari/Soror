@@ -8,8 +8,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 	<link rel="shotcut icon" href="img/identidadevisual4.png">
 </head>
-<body>
-	<header>
+<body onload="verifica()">
+	<header id="header">
 		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
 			<div class="container">
 					<a href="#home">
@@ -74,42 +74,48 @@
 			</div>
 		</section>
 
-		<section class="cad container" id="cad">
-			<div class="titulo">
-				<h2>Cadastrar serviço</h2>
-			</div>
-			<div class="cad_servicos">
-				<div class="pessoal">
-					<h3>Dados Pessoais</h3>
-					<div class="sla">
-						<label for="nome">Nome</label>
-						<p><input type="text" id="nome"></p>
-						<label for="email">Email</label>
-						<p><input type="email" id="email"></p>
-						<label for="senha">Senha</label>
-						<p><input type="password" id="senha"></p>
-						<label for="cpf">CPf</label>
-						<p><input type="cpf" id="cpf"></p>
-					</div>
+		<section class="cad " id="cad">
+			<div class="container">
+				<div class="titulo">
+					<h2 class="cadtitulo">Cadastrar serviço</h2>
 				</div>
-				<div class="servico" id="formservico">
-					<h3>Serviço</h3>
-					<div class="sla">
-						<label for="categoria">Categoria</label>
-						<p><input type="text" id="categoria"></p>
-						<label for="especifico">Específico</label>
-						<p><input type="text" id="especifico"></p>
-						<label for="descricao">Descrição</label>
-						<p><textarea id="descricao" class="desc"></textarea></p>
-						<label for="contato">Contato</label>
-						<p><input type="number" id="contato"></p>
+				<div class="cad_servicos">
+					<div class="pessoal">
+						<h3>Dados Pessoais</h3>
+						<div class="sla">
+							<label for="nome">Nome</label>
+							<p><input type="text" id="nome"></p>
+							<label for="email">Email</label>
+							<p><input type="email" id="email"></p>
+							<label for="senha">Senha</label>
+							<p><input type="password" id="senha"></p>
+							<label for="cpf">CPf</label>
+							<p><input type="cpf" id="cpf"></p>
+						</div>
+						<div>
+							<button class="btn btncad">Salvar</button>
+						</div>
 					</div>
-					<div class="add">
-						<button class="btn" onclick="addform()">
-							<img class="btnadd" src="img/add.png">
-						</button>
-						<button class="btn btnrelatoform">Registrar</button>
-					</div> 
+					<div class="servico" >
+						<h3>Serviço</h3>
+						<div class="sla">
+							<label for="categoria">Categoria</label>
+							<p><input type="text" id="categoria"></p>
+							<label for="especifico">Específico</label>
+							<p><input type="text" id="especifico"></p>
+							<label for="descricao">Descrição</label>
+							<p><textarea id="descricao" class="desc"></textarea></p>
+							<label for="contato">Contato</label>
+							<p><input type="number" id="contato"></p>
+						</div>
+						<div class="add">
+							<button class="btn" onclick="addform()">
+								<img class="btnadd" src="img/add.png">
+							</button>
+							<button class="btn btncad">Registrar</button>
+						</div> 
+					</div>
+					<div id="formservico"></div>
 				</div>
 			</div>
 		</section>
@@ -202,88 +208,90 @@
 			</div>-->
 		</section>
 
-		<section class="container rel" id="relatar">
-			<div class="titulo">
-				<h2>Relatos</h2>
-				<form class="input-group">
-					<input class="form-control" type="search" placeholder="Buscar relato">
-					<span class="input-group-btn">
-						<button class="btn">
-							<img src="img/search.png" class="btnsearch">
-						</button>
-					</span>	
-				</form>
-			</div>
-			<div class="relatos row">
-				<div class="col-lg-4">
-					<div class="relatoform">
-						<h4>Deseja enviar um relato?</h4>
-						<form class="formajuste">
-							<input class="form-control bg arejamento" type="text" placeholder="Nome (opcional)">
-							<input class="form-control bg arejamento" type="email" placeholder="Email">
-							<input class="form-control bg arejamento" type="text" placeholder="Assunto">
-							<input class="form-control bg arejamento" type="textarea" placeholder="Relato">
-							<button class="btn arejamento btnrelatoform">Enviar relato</button>
-						</form>
-					</div>
+		<section class="rel" id="relatar">
+			<div class="container">
+				<div class="titulo">
+					<h2>Relatos</h2>
+					<form class="input-group">
+						<input class="form-control" type="search" placeholder="Buscar relato">
+						<span class="input-group-btn">
+							<button class="btn">
+								<img src="img/search.png" class="btnsearch">
+							</button>
+						</span>	
+					</form>
 				</div>
-				<div class="col-lg-4">			
-					<div class="card ">
-						<div class="card-header text-center">
-							<h1>Título</h1>
-						</div>
-						<div class="card-body text-justify">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+				<div class="relatos row">
+					<div class="col-lg-4">
+						<div class="relatoform">
+							<h4>Deseja enviar um relato?</h4>
+							<form class="formajuste">
+								<input class="form-control bg arejamento" type="text" placeholder="Nome (opcional)">
+								<input class="form-control bg arejamento" type="email" placeholder="Email">
+								<input class="form-control bg arejamento" type="text" placeholder="Assunto">
+								<input class="form-control bg arejamento" type="textarea" placeholder="Relato">
+								<button class="btn arejamento btnrelatoform">Enviar relato</button>
+							</form>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4">			
-					<div class="card ">
-						<div class="card-header text-center">
-							<h1>Título</h1>
-						</div>
-						<div class="card-body text-justify">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">			
-					<div class="card ">
-						<div class="card-header text-center">
-							<h1>Título</h1>
-						</div>
-						<div class="card-body text-justify">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					<div class="col-lg-4">			
+						<div class="card ">
+							<div class="card-header text-center">
+								<h1>Título</h1>
+							</div>
+							<div class="card-body text-justify">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4">			
-					<div class="card ">
-						<div class="card-header text-center">
-							<h1>Título</h1>
-						</div>
-						<div class="card-body text-justify">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					<div class="col-lg-4">			
+						<div class="card ">
+							<div class="card-header text-center">
+								<h1>Título</h1>
+							</div>
+							<div class="card-body text-justify">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-4">			
-					<div class="card ">
-						<div class="card-header text-center">
-							<h1>Título</h1>
+					<div class="col-lg-4">			
+						<div class="card ">
+							<div class="card-header text-center">
+								<h1>Título</h1>
+							</div>
+							<div class="card-body text-justify">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+							</div>
 						</div>
-						<div class="card-body text-justify">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+					</div>
+					<div class="col-lg-4">			
+						<div class="card ">
+							<div class="card-header text-center">
+								<h1>Título</h1>
+							</div>
+							<div class="card-body text-justify">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">			
+						<div class="card ">
+							<div class="card-header text-center">
+								<h1>Título</h1>
+							</div>
+							<div class="card-body text-justify">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -302,5 +310,6 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="js/funcBotao.js"></script>
 	<script src="js/addform.js"></script>
+	<script src="js/header.js"></script>
 </body>
 </html>
