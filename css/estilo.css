@@ -4,7 +4,8 @@
 }
 
 :root{
-	--amarelo: rgba(255,255,0,0.5);
+	/*--amarelo: rgba(255,255,0,0.5);*/
+	--amarelo: #fffa48;
 	--amarelo2: #ffe642;
 	--cinza: rgba(192,192,192,0.2);
 	--roxo: rgba(104, 35, 102, 1); 
@@ -174,6 +175,7 @@ h2{
 .cad_servicos input, .cad_servicos textarea{
 /*	border-style: none;
 	background-color: #241322;*/
+	outline-style: none;
 }
 
 .pessoal{
@@ -232,40 +234,23 @@ input{
 	width: 300px;
 }
 
-.rel{
-	/*background-color: var(--lilas);*/
-}
-
-.relatos{
-
+footer{
+	background-color: rgba(211, 211, 211, 1);
+	height: 3rem;
 	display: flex;
 }
 
-.relatoform{
-	background-color: rgba(255, 255, 124, .9);
-	border-radius: 5px;
-	padding: 1.5rem;
-	margin-bottom: 1rem;
+.conteudofooter{
+	display: flex;
+	height: 3rem;
+	align-items: center;
+	justify-content: center;
 }
 
-.bg{
-	background-color: var(--cinza) !important;
-	border-style: none !important;
-}
-
-.arejamento{
-	margin-top: 10px;
-}
-
-.btnrelatoform{
-	padding: 5px !important;
-	background-color: var(--roxo) !important;
-	color: #fcfcfc !important;
-}
-
-.card{
-	margin-bottom: 1rem;
-	/*background-color: var(--lilas) !important;*/
+footer a{
+	color: rgba(44, 44, 44, 1);
+	display: flex;
+	text-align: center;
 }
 
 @media screen and (min-width: 725px){
