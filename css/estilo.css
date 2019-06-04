@@ -11,6 +11,7 @@
 	--roxo: rgba(104, 35, 102, 1); 
 	--roxo2: rgba(104, 35, 102, .9);
 	--lilas: rgba(120, 59, 135, 1);
+	--lilas2: rgba(184, 164, 180, 1);
 }
 
 body{
@@ -88,11 +89,10 @@ hr{
 	display: flex;
 }
 
-.btnhome{
+.btnroxo{
 	border-style: none;
 	background-color: var(--roxo);
-	height: 35px;
-	width: 90px;
+	padding: 5px 10px ;
 	border-radius: 10px;
 	margin: 10px;
 	color: white;
@@ -123,8 +123,7 @@ hr{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 2rem;
-	align-items: center;	
-	/*border: solid red;*/
+	align-items: center;
 
 }
 
@@ -135,10 +134,6 @@ hr{
 
 .titulo input{
 	border: 1px solid var(--amarelo2);
-}
-
-h2{
-	padding-right: 2rem; 
 }
 
 .btn{
@@ -152,11 +147,9 @@ h2{
 
 .buscar{
 	height: 100vh;
-	/*border: solid black;*/
 }
 
 .cad{
-	/*border: solid purple;*/
 	height: 100%;
 	background-color: var(--roxo2);
 }
@@ -172,13 +165,7 @@ h2{
 	flex-direction: column;
 }
 
-.rel{
-	background-color: var(--lilas);
-}
-
 .cad_servicos input, .cad_servicos textarea{
-/*	border-style: none;
-	background-color: #241322;*/
 	outline-style: none;
 }
 
@@ -208,12 +195,6 @@ h2{
 	height: 30px;
 }
 
-.btncad{
-	padding: 5px !important;
-	background-color: var(--roxo) !important;
-	color: #fcfcfc !important;
-}
-
 .add{
 	display: flex;
 	justify-content: space-between;
@@ -226,16 +207,52 @@ h2{
 }
 
 .aprender{
-	height: 100vh;
-	/*border: solid green;*/
+	height: 100%;
 }
 
-.slide-main{
+
+.slides{
 	display: flex;
+	flex-direction: column;
+}
+
+.slide{
+	margin: 1rem;
+	padding: 1rem;
+	background-color: var(--lilas2);
+	border-radius: 20px;
+	box-shadow: 3px 3px 20px  #696969;
+}
+
+.slide h1{
+	text-align: center;
+}
+
+.slide p{
+	text-align: justify;
 }
 
 input{
 	width: 300px;
+}
+
+.relatar{
+	background-color: var(--lilas);
+}
+
+.relatar h2{
+	color: #f3e1f1;
+}
+
+.relatoform{
+	background-color: #e6e6e6;
+	padding: 1.5rem;
+	border-radius: 20px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 3px 3px 20px #2b2b2b;
 }
 
 footer{
@@ -266,12 +283,12 @@ footer a{
 		flex-direction: row;
 		justify-content: space-between;
 	}
-		
-	/*.cad{
-		height: 100vh;
-	}*/
-
+	
 	.cad_servicos{
+		flex-direction: row;
+	}
+
+	.slides{
 		flex-direction: row;
 	}
 }

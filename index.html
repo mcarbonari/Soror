@@ -47,15 +47,15 @@
 				<h1>O que você deseja?</h1>
 				<div class="botoes">
 					<div class="relativa">
-						<button class="btnhome" id="servico">Serviços</button>
+						<button class="btnroxo" id="servico">Serviços</button>
 						<ul class="lista" id="listaOculta">
 			        <li><a href="#buscar">Buscar</a></li>
 			        <hr>
 					    <li><a href="#cad">Cadastrar</a></li>
 			      </ul>
 					</div>
-					<button class="btnhome" onclick="aprender()">Aprender</button>
-					<button class="btnhome" onclick="relatar()">Relatar</button>
+					<button class="btnroxo" onclick="aprender()">Aprender</button>
+					<button class="btnroxo" onclick="relatar()">Relatar</button>
 				</div>
 			</div>
 		</section>
@@ -93,7 +93,7 @@
 							<p><input type="cpf" id="cpf"></p>
 						</div>
 						<div>
-							<button class="btn btncad">Salvar</button>
+							<button class="btnroxo">Salvar</button>
 						</div>
 					</div>
 					<div class="servico" >
@@ -112,7 +112,7 @@
 							<button class="btn" onclick="addform()">
 								<img class="btnadd" src="img/add.png">
 							</button>
-							<button class="btn btncad">Registrar</button>
+							<button class="btnroxo">Registrar</button>
 						</div> 
 					</div>
 					<div id="formservico"></div>
@@ -120,32 +120,61 @@
 			</div>
 		</section>
 
-		<section class="aprender container" id="aprender">
-			<div class="titulo">
-				<h2>Aprender</h2>
-				<form class="input-group">
-					<input class="form-control" type="search" placeholder="Buscar">
-					<span class="input-group-btn">
-						<button class="btn">
-							<img src="img/search.png" class="btnsearch">
-						</button>
-					</span>	
-				</form>
-			</div>
-			<div class="slides">
-				<div class="slide">
-					<h1>Título</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section class="aprender" id="aprender">
+			<div class="container">
+				<div class="titulo">
+					<h2>Aprender</h2>
+					<form class="input-group">
+						<input class="form-control" type="search" placeholder="Buscar">
+						<span class="input-group-btn">
+							<button class="btn">
+								<img src="img/search.png" class="btnsearch">
+							</button>
+						</span>	
+					</form>
 				</div>
-			</div>
+				<div class="slides">
+					<div class="slide">
+						<h1>Título</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="slide">
+						<h1>Título</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="slide">
+						<h1>Título</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="slide">
+						<h1>Título</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>	
 		</section>
 
-		<section class="rel" id="relatar">
+		<section class="relatar" id="relatar">
 			<div class="container">
 				<div class="titulo">
 					<h2>Relatos</h2>
@@ -160,14 +189,14 @@
 				</div>
 				<div class="relatos row">
 					<div class="col-lg-4">
-						<div class="relato">
+						<div class="relatoform">
 							<h3>Deseja enviar um relato?</h3>
 							<form class="formajuste">
 								<p><input class="bg arejamento" type="text" id="nomerelato" placeholder="Nome (opcional)"></p>
 								<p><input class="bg arejamento" type="email" id="emailrelato" placeholder="Email"></p>
 								<p><input class="bg arejamento" type="text" id="senharelato" placeholder="Assunto"></p>
 								<p><textarea class="bg arejamento" type="password" id="senharelato" placeholder="Relato"></textarea></p>
-								<button class="btn arejamento btnrelatoform">Enviar relato</button>
+								<button class="btnroxo">Enviar relato</button>
 							</form>
 						</div>
 					</div>
