@@ -169,8 +169,12 @@ hr{
 	flex-direction: column;
 }
 
-.cad_servicos input, .cad_servicos textarea{
+.cad_servicos input, .cad_servicos textarea, .relatoform input, .relatoform textarea{
 	outline-style: none;
+	border-style: none;
+	width: 300px;
+	background-color: #d9d9d9;
+	box-shadow: inset rgba(0,0,0,.5) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
 }
 
 .pessoal,
@@ -231,10 +235,6 @@ hr{
 	margin: 0 auto;
 }
 
-.cad input{
-	width: 300px;
-}
-
 .relatar{
 	background-color: var(--lilas);
 	height: 100%;
@@ -247,7 +247,6 @@ hr{
 .relatos{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 }
 
 .relatoform{
@@ -255,7 +254,7 @@ hr{
 	padding: 15px;
 	border-radius: 20px;
 	height: 100%;
-	width: 300px;
+	width: 350px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -269,8 +268,8 @@ hr{
 	text-align: center;
 }
 
-.relatoform input{
-	width: 250px;
+.relatoform input, .relatoform textarea{
+	padding: 2px 5px;
 }
 
 footer{
