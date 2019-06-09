@@ -46,6 +46,9 @@
 				<p>A palavra sóror significa <span class="italico">irmãs</span> em latim. Ela deu origem ao termo <span class="italico">sororidade</span>, ou seja, irmandade.</p>
 				<h1>O que você deseja?</h1>
 				<div class="botoes">
+					
+					<button class="btnroxo" onclick="aprender()">Aprender</button>
+					<button class="btnroxo" onclick="relatar()">Relatar</button>
 					<div class="relativa">
 						<button class="btnroxo" id="servico">Serviços</button>
 						<ul class="lista" id="listaOculta">
@@ -54,8 +57,6 @@
 					    <li><a href="#cad">Cadastrar</a></li>
 			      </ul>
 					</div>
-					<button class="btnroxo" onclick="aprender()">Aprender</button>
-					<button class="btnroxo" onclick="relatar()">Relatar</button>
 				</div>
 			</div>
 		</section>
@@ -80,14 +81,10 @@
 				<div class="cad_servicos">
 					<div class="pessoal">
 						<h3>Dados Pessoais</h3>
-						<div class="sla">
-							<!-- <label for="nome">Nome</label> -->
+						<div>
 							<p><input type="text" id="nome" placeholder="Nome"></p>
-							<!-- <label for="email">Email</label> -->
 							<p><input type="email" id="email" placeholder="Email"></p>
-							<!-- <label for="senha">Senha</label> -->
 							<p><input type="password" id="senha" placeholder="Senha"></p>
-							<!-- <label for="cpf">CPf</label> -->
 							<p><input type="cpf" id="cpf" placeholder="CPF"></p>
 						</div>
 						<div>
@@ -96,14 +93,10 @@
 					</div>
 					<div class="servico" >
 						<h3>Serviço</h3>
-						<div class="sla">
-							<!-- <label for="categoria">Categoria</label> -->
+						<div>
 							<p><input type="text" id="categoria" placeholder="Categoria"></p>
-							<!-- <label for="especifico">Específico</label> -->
 							<p><input type="text" id="especifico" placeholder="Especifico"></p>
-							<!-- <label for="descricao">Descrição</label> -->
 							<p><textarea id="descricao" class="desc" placeholder="Descrição"></textarea></p>
-							<!-- <label for="contato">Contato</label> -->
 							<p><input type="number" id="contato" placeholder="Contato"></p>
 						</div>
 						<div class="add">

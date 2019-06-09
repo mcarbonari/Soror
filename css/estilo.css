@@ -59,6 +59,7 @@ body{
 
 .home h1{
 	color: white;
+	text-align: center;
 	text-shadow: 3px 3px 10px #000;
 	text-transform: uppercase;
 	margin-top: 1rem;
@@ -82,11 +83,12 @@ hr{
 }
 
 .logoinicio{
-	height: 120px;
+	height: 110px;
 }
 
 .botoes{
 	display: flex;
+	flex-direction: column;
 }
 
 .btnroxo{
@@ -97,7 +99,7 @@ hr{
 	color: white;
 	width: 110px;
 	font-size: 14px;
-	margin: 0 5px 0 5px;
+	margin: 5px;
 	text-transform: uppercase;
 	box-shadow: 3px 3px 20px #696969;
 }
@@ -132,16 +134,16 @@ hr{
 
 .titulo h2, .titulo form{
 	margin-top: 56px;
-	font-size: 2.2rem;
+	font-size: 2.1rem;
 	display: flex;
 }
 
 .titulo input{
 	border-style: none;
-	width: 280px;
+	width: 260px;
 	background: unset;
 	outline: none;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	border-bottom: solid 1px var(--amarelo2);
 }
 
@@ -183,7 +185,7 @@ hr{
 
 .cad_servicos input, .cad_servicos textarea, .relatoform input, .relatoform textarea{
 	border-style: none;
-	width: 90%;
+	width: 265px;
 	background: unset;
 	outline: none;
 	border-bottom: solid 1px var(--roxo2);
@@ -333,14 +335,14 @@ footer{
 }
 
 .infozinha{
-	background-color: rgba(78, 57, 88, .5);
+	/*background-color: rgba(78, 57, 88, .5);
 	padding: 1rem;
-	border-radius: 10px;
+	border-radius: 10px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: .8rem;
+	margin-bottom: 1.5rem;
 }
 
 .infozinha h3{
@@ -372,8 +374,12 @@ footer{
 }
 
 @media screen and (min-width: 725px){
-	h2{
-		padding-right: 40rem; 
+	.logoinicio{
+		height: 130px;
+	}
+
+	.botoes{
+		flex-direction: row;
 	}
 
 	.titulo{
@@ -399,6 +405,7 @@ footer{
 
 	.infozinha{
 		margin-right: 30px;
+		margin-bottom: 0;
 		align-items: flex-start;
 	}
 
