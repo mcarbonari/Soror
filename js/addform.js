@@ -1,4 +1,4 @@
 function addform() {
 	var add = document.getElementById('formservico');
-	add.innerHTML += "<form class='servico'><h3>Serviço</h3><div class='sla'><label for='categoria'>Categoria</label><p><input type='text' id='categoria'></p><label for='especifico'>Específico</label><p><input type='text' id='especifico'></p><label for='descricao'>Descrição</label><p><textarea id='descricao' class='desc'></textarea></p><label for='contato'>Contato</label><p><input type='number' id='contato'></p></div><div class='add'><button class='btn' onclick='addform()'><img class='btnadd' src='img/add.png'></button><button class='btnroxo'>Registrar</button></div></form>"
+	add.innerHTML += "<form class='servico'><h3>Serviço</h3><div><p><input type='text' id='categoria' placeholder='Categoria'></p><p><input type='text' id='especifico' placeholder='Específico'></p><p><textarea id='descricao' class='desc' placeholder='Descrição'></textarea></p><p><input type='number' id='contato' placeholder='Contato'></p></div><div class='btnservico'><button class='btnadd' onclick='addform()'><img src='img/add.png'></button><button class='btnroxo'>Registrar</button></div></form>"
 }

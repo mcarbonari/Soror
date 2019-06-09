@@ -207,10 +207,16 @@ hr{
 }
 
 .btnadd{
+	border-style: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.btnadd img{
 	height: 30px;
 }
 
-.add{
+.btnservico{
 	display: flex;
 	justify-content: space-between;
 }
@@ -305,7 +311,6 @@ footer{
 }
 
 .logofooter{
-	width: 40%;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -326,8 +331,6 @@ footer{
 }
 
 .info{
-	width: 60%;
-	/*padding: 1rem;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -335,9 +338,8 @@ footer{
 }
 
 .infozinha{
-	/*background-color: rgba(78, 57, 88, .5);
-	padding: 1rem;
-	border-radius: 10px;*/
+	background-color: rgba(78, 57, 88, .3);
+	padding: 1rem 2rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -399,6 +401,14 @@ footer{
 		flex-direction: row;
 	}
 
+	.logofooter{
+		width: 40%;
+	}
+
+	.info{
+		width: 60%;
+	}
+
 	.info{
 		flex-direction: row;
 	}
@@ -407,6 +417,7 @@ footer{
 		margin-right: 30px;
 		margin-bottom: 0;
 		align-items: flex-start;
+		border-radius: 10px;
 	}
 
 	.infozinha h3{
