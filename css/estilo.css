@@ -167,6 +167,30 @@ hr{
 	height: 100vh;
 }
 
+.btnfechado, .btnaberto{
+	outline: none;
+	border-style: none;
+	background-color: transparent;
+}
+
+.btnfechado img{
+	height: 18px;
+}
+
+.btnaberto img{
+	width: 20px;
+	height: 10px;
+	display: none;
+}
+
+.dropdowninfo li{
+	list-style: none;
+}
+
+.infoinicial{
+	display: flex;
+}
+
 .cad{
 	height: 100%;
 	background-color: var(--roxo2);
