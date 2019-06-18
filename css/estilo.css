@@ -211,12 +211,12 @@ hr{
 	margin: 1rem;
 }
 
-.cad{
+.cad, .perfil{
 	height: 100%;
 	background-color: var(--roxo2);
 }
 
-.cadtitulo{
+.cadtitulo, .perfiltitulo{
 	color: white;
 }
 
@@ -227,7 +227,10 @@ hr{
 	flex-direction: column;
 }
 
-.cad_servicos input, .cad_servicos textarea, .relatoform input, .relatoform textarea{
+.cad_servicos input,
+.cad_servicos textarea,
+.relatoform input,
+.relatoform textarea{
 	border-style: none;
 	width: 265px;
 	background: unset;
@@ -238,7 +241,9 @@ hr{
 .pessoal,
 .servico,
 .relatoform,
-.relato{
+.relato, 
+.perfilpessoal, 
+.perfilservicos{
 	background-color: #e6e6e6;
 	padding: 1rem;
 	border-radius: 15px;
@@ -250,7 +255,8 @@ hr{
 	box-shadow: 3px 3px 20px #2b2b2b;
 }
 
-.btnadd, .btnabrir{
+.btnadd, 
+.btnabrir{
 	border-style: none;
 	outline: none;
 	background-color: transparent;
@@ -274,6 +280,34 @@ hr{
 	height: 100%;
 }
 
+.perfilimg img{
+	height: 20px;
+	margin: 8px 0px 0px 15px !important;
+}
+
+.perfil{
+	display: none;
+}
+
+.perfilconteudo{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.perfilpessoal, 
+.perfilservicos{
+	justify-content: center;
+	align-items: center;
+}
+
+
+.perfilpessoal img, 
+.perfilservicos img{
+	width: 90px;
+	margin: 1rem;
+}
 
 .slides{
 	display: flex;
@@ -337,8 +371,6 @@ hr{
 .relato p{
 	text-align: justify;
 }
-
-
 
 footer{
 	display: flex;
