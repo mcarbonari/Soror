@@ -110,7 +110,7 @@ hr{
 	text-decoration: none!important;
 }
 
-.relativa{
+.relativa, .itembusca{
 	position: relative;
 }
 
@@ -136,6 +136,7 @@ hr{
 	margin-top: 56px;
 	font-size: 2.1rem;
 	display: flex;
+	text-transform: uppercase;
 }
 
 .titulo input{
@@ -164,23 +165,37 @@ hr{
 }
 
 .buscar{
-	height: 100vh;
+	height: 90vh;
 }
 
-.btnfechado, .btnaberto{
-	outline: none;
-	border-style: none;
-	background-color: transparent;
-}
-
-.btnfechado img{
-	height: 18px;
-}
-
-.btnaberto img{
-	width: 20px;
-	height: 10px;
+.dropdowninfo{
+	position: absolute;
+	left: 15px;
 	display: none;
+	padding: 0.5rem;
+}
+
+.btnabrir{
+	color: var(--roxo);
+	font-weight: bold;
+	font-size: 2rem;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	padding: 0px 0px;
+	transition: 0.6s;
+}
+
+.btnabrir:focus{
+	outline: none !important;
+}
+
+.btnabrir:active{
+	transform: rotate(50deg);
+}
+
+.busca{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .dropdowninfo li{
@@ -189,6 +204,11 @@ hr{
 
 .infoinicial{
 	display: flex;
+	align-items: center;
+}
+
+.infobusca{
+	margin: 1rem;
 }
 
 .cad{
@@ -230,7 +250,7 @@ hr{
 	box-shadow: 3px 3px 20px #2b2b2b;
 }
 
-.btnadd{
+.btnadd, .btnabrir{
 	border-style: none;
 	outline: none;
 	background-color: transparent;
