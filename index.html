@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Sóror</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width", initial-scale="1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -50,7 +51,7 @@
 					<button class="btnroxo" onclick="aprender()">Aprender</button>
 					<button class="btnroxo" onclick="relatar()">Relatar</button>
 					<div class="relativa">
-						<button class="btnroxo" id="servico">Serviços</button>
+						<button class="btnroxo" id="servico" onclick="abrirServico();">Serviços</button>
 						<ul class="lista" id="listaOculta">
 			        <li><a href="#buscar">Buscar</a></li>
 			        <hr>
@@ -74,7 +75,7 @@
 			<div class="busca container"><!-- ajuda: funcionamento da busca-->
 				<div class="itembusca">
 					<div class="infoinicial">	
-						<button class="btnabrir" id="btnabrir">+</button>
+						<button class="btnabrir" id="btnabrir" onclick="btnAbrir();">+</button>
 						<h4>Específico (nome do serviço)</h4>
 					</div>
 					<ul class="dropdowninfo" id="dropdowninfo">
@@ -119,7 +120,6 @@
 							<button class="btnroxo">Registrar</button>
 						</div> 
 					</div>
-					<div id="formservico"></div>
 				</div>
 			</div>
 		</section>
@@ -289,9 +289,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="js/link.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script src="js/funcBotao.js"></script>
 	<script src="js/addform.js"></script>
 	<script src="js/header.js"></script>
-	<script src="js/btnservico.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/addTransition.js"></script>
 </body>
 </html>

@@ -189,10 +189,29 @@ hr{
 	outline: none !important;
 }
 
-.btnabrir:active{
-	transform: rotate(50deg);
+@keyframes rotationButton {
+	0%{
+		transform: rotate(0deg);
+		transition: 0.5s;
+	}
+
+	100%{
+		transform: rotate(50deg);
+		animation-fill-mode: forwards;
+	}
 }
 
+@keyframes rotationButtonDisable {
+	0%{
+		transform: rotate(50deg);
+		transition: 0.5s;
+	}
+
+	100%{
+		transform: rotate(0deg);
+		animation-fill-mode: forwards;
+	}
+}
 .busca{
 	display: flex;
 	flex-wrap: wrap;
@@ -286,7 +305,7 @@ hr{
 }
 
 .perfil{
-	display: none;
+	/*display: none;*/
 }
 
 .perfilconteudo{
@@ -467,6 +486,7 @@ footer{
 	
 	.cad_servicos{
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.slides{
