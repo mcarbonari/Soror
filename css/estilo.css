@@ -22,7 +22,9 @@ body{
 	flex-grow: 0 !important;
 }
 
-.navbar-light, .navbar-nav, .nav-link {
+.navbar-light,
+.navbar-nav, 
+.nav-link {
     color: rgba(0,0,0,.8) !important;
     /*font-size: 1.2rem !important;*/
 }
@@ -104,13 +106,15 @@ hr{
 	box-shadow: 3px 3px 20px #696969;
 }
 
-.lista a, .lista li{
+.lista a, 
+.lista li{
 	list-style: none;
 	color: white !important;
 	text-decoration: none!important;
 }
 
-.relativa, .itembusca{
+.relativa, 
+.itembusca{
 	position: relative;
 }
 
@@ -132,7 +136,8 @@ hr{
 	align-items: center;
 }
 
-.titulo h2, .titulo form{
+.titulo h2, 
+.titulo form{
 	margin-top: 56px;
 	font-size: 2.1rem;
 	display: flex;
@@ -230,12 +235,16 @@ hr{
 	margin: 1rem;
 }
 
-.cad, .perfil{
+.cad, 
+.perfil, 
+.login{
 	height: 100%;
 	background-color: var(--roxo2);
 }
 
-.cadtitulo, .perfiltitulo{
+.cadtitulo, 
+.perfiltitulo, 
+.logintitulo{
 	color: white;
 }
 
@@ -249,7 +258,8 @@ hr{
 .cad_servicos input,
 .cad_servicos textarea,
 .relatoform input,
-.relatoform textarea{
+.relatoform textarea,
+.log input{
 	border-style: none;
 	width: 265px;
 	background: unset;
@@ -262,7 +272,8 @@ hr{
 .relatoform,
 .relato, 
 .perfilpessoal, 
-.perfilservicos{
+.perfilservicos,
+.log{
 	background-color: #e6e6e6;
 	padding: 1rem;
 	border-radius: 15px;
@@ -285,9 +296,19 @@ hr{
 	height: 30px;
 }
 
-.btnservico{
+.btnservico, 
+.btnpessoal, 
+.btnlogin{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.btnpessoal a, 
+.btnpessoal a:hover, 
+.btnlogin a, 
+.btnlogin a:hover{
+	color:  #000;
 }
 
 .desc{
@@ -305,10 +326,15 @@ hr{
 }
 
 .perfil{
-	/*display: none;*/
+	display: none;
 }
 
-.perfilconteudo{
+.login{
+	display: none;
+}
+
+.perfilconteudo, 
+.loginconteudo{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;

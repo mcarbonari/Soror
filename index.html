@@ -34,7 +34,7 @@
 				    </li>
 						<li><a href="#aprender" class="nav-link"><strong>Aprender</strong></a></li>
 						<li><a href="#relatar" class="nav-link"><strong>Relatar</strong></a></li>
-						<li class="perfilimg" id="perfilimg"><a href="perfil.html"><img src="img/perfil2.png"></a></li>
+						<li class="perfilimg" id="perfilimg"><a href="#perfil"><img src="img/perfil2.png"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -90,7 +90,7 @@
 		<section class="cad " id="cad"><!-- ajuda; além do funcionamento do cadastro,eu acho que depois do login (preciso fazer a tela de login kkk) essa section da pra ser substituido pelo perfil (?) bem simples só pra editar e adicionar informações-->
 			<div class="container">
 				<div class="titulo">
-					<h2 class="cadtitulo">Cadastrar serviço</h2>
+					<h2 class="cadtitulo">Cadastro</h2>
 				</div>
 				<div class="cad_servicos">
 					<div class="pessoal">
@@ -98,11 +98,13 @@
 						<div>
 							<p><input type="text" id="nome" placeholder="Nome"></p>
 							<p><input type="email" id="email" placeholder="Email"></p>
-							<p><input type="password" id="senha" placeholder="Senha"></p>
+							<p><input type="password" id="senha" placeholder="Senha"></p>					
+							<p><input type="password" id="confirmasenha" placeholder="Confirmar senha"></p>
 							<p><input type="cpf" id="cpf" placeholder="CPF"></p>
 						</div>
-						<div>
+						<div class="btnpessoal">
 							<button class="btnroxo">Salvar</button>
+							<a href="#login">Já possui conta?</a>
 						</div>
 					</div>
 					<div class="servico" >
@@ -117,14 +119,33 @@
 							<button class="btnadd" onclick="addform()">
 								<img class="" src="img/add.png">
 							</button>
-							<button class="btnroxo">Registrar</button>
+							<button class="btnroxo">Salvar</button>
 						</div> 
 					</div>
 				</div>
 			</div>
 		</section>
 
-			<section class="perfil" id="perfil"> <!-- já ta estilizado mas por enquanto deixei display none pq precisa definir se essa section vai mesmo substituir a tela de cadastro depois do login, ou se eu faço outro arquivo html (que na verdade eu ja fiz e estilizei, no perfil.html, mas qualuqer coisa é só apagar ne)-->
+		<section class="login" id="login">
+			<div class="container">
+				<div class="titulo">
+					<h2 class="logintitulo">Login</h2>
+				</div>
+			</div>
+			<div class="loginconteudo">
+				<div class="log">
+					<p><input type="email" id="emaillog" placeholder="Email"></p>
+					<p><input type="password" id="senhalog" placeholder="Senha"></p>
+					<p><input type="password" id="confirmasenhalog" placeholder="Confirmar senha"></p>
+					<div class="btnlogin">
+						<button class="btnroxo">Entrar</button>
+						<a href="#cad">Não possui conta?</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="perfil" id="perfil"> <!-- já ta estilizado mas por enquanto deixei display none pq precisa definir se essa section vai mesmo substituir a tela de cadastro depois do login, ou se eu faço outro arquivo html (que na verdade eu ja fiz e estilizei, no perfil.html, mas qualuqer coisa é só apagar ne)-->
 			<div class="container">
 				<div class="titulo">
 					<h2 class="perfiltitulo">Perfil</h2>
@@ -133,19 +154,19 @@
 				<div class="perfilconteudo">
 					<div class="perfilpessoal">
 						<img src="img/perfil3.png">
-							<h3>Nome</h3>
-							<p>Email</p>
-							<p>Senha</p>
-							<p>CPF</p>
-							<button class="btnroxo">Editar</button>
+						<h3>Nome</h3>
+						<p>Email</p>
+						<p>Senha</p>
+						<p>CPF</p>
+						<button class="btnroxo">Editar</button>
 					</div>
 					<div class="perfilservicos">
 						<img src="img/servico2.png">
-							<h3>Específico</h3>
-							<p>Categoria</p>
-							<p>Descrição</p>
-							<p>Contato</p>
-							<button class="btnroxo">Editar</button>
+						<h3>Específico</h3>
+						<p>Categoria</p>
+						<p>Descrição</p>
+						<p>Contato</p>
+						<button class="btnroxo">Editar</button>
 					</div>	
 				</div> 	
 			</div>
